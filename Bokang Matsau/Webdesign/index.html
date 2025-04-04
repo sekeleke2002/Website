@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header>
+            <h1>Bokang Matsau's Football Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <img src="assets/images/thato.png" alt="Thato's Photo" class="profile-img clickable-img">
+                <h2>Welcome to My Football Universe</h2>
+                <p>Where code meets the beautiful game!!</p>
+                <div id="countdown"></div>
+            </section>
+        </main>
+
+        <footer>
+            © 2025 Bokang | Football Portfolio
+        </footer>
+    </div>
+
+    <script>
+        // Live time display
+        function updateCountdown() {
+            const countdown = document.getElementById("countdown");
+            const now = new Date();
+            countdown.textContent = "Current Time: " + now.toLocaleTimeString();
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown(); // Call once to show immediately
+    </script>
+</body>
+</html>
